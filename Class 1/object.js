@@ -1,4 +1,4 @@
-let cap = {
+var cap = {
     name: "Class 1 Object",
     age: 10,
     "last Name": "Elementary",
@@ -22,3 +22,16 @@ console.log("Cap's city: ", cap.address.city);
 console.log("Cap's items: ", cap.items);
 console.log("First item: ", cap.items[0]);
 cap.sayHello();
+
+
+// ---------
+
+var cap = {
+    name: "Steve",
+    age: 30,
+    isStudent: false,
+};
+
+for(let key in cap) {
+    console.log(key, " ", cap[key]); //value = cap[key]
+}
