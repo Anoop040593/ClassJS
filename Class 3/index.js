@@ -24,3 +24,21 @@ const obj = {
     age: 21
     
 }
+
+const array1 = [1,2,[1,2]];
+const array2 = [...array1]; //spread operator
+array2[0] = 100;
+array2[2] = 200;
+
+console.log("A1: ", array1);
+console.log("A2: ", array2);
+
+//rest operator
+function fn(params1, ...restParams) { //rest operator
+    console.log("P:", params1);
+    console.log("R:" ,restParams);
+}
+
+fn("h1", "remaining", " rem", "r");
+fn("hi", "header", "heading");
+fn("h1");
