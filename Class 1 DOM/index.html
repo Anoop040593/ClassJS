@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+    
+       <!-- <script src="./main.js"></script> -->
+
+</head>
+<body>
+    <!-- <h1>Anoop</h1>
+    <h1>Pemmaraju</h1>
+    <div id="random">This is a div</div>
+    <div class="randomClassName">This is antoher div.</div> -->
+    <h1 class="h1fine">I am h1</h1>
+    <h1>I am another</h1>
+    <h1>I am h1</h1>
+    <h1>I am h1</h1>
+    <div id="unique">
+        
+        <p class="para">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, \
+            publishing, and web development. Its purpose is to permit a page layout to be designed, independently of 
+            the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text \
+        </p>
+        <p class="para" style="display: none">Lorem ipsum is a dummy or placeholder text commonly used in graphic design, \
+            publishing, and web development. Its purpose is to permit a page layout to be designed, independently of 
+            the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text \
+        </p>
+        <p>Lorem ipsum is a dummy or placeholder text commonly used in graphic design, \
+            publishing, and web development. Its purpose is to permit a page layout to be designed, independently of 
+            the copy that will subsequently populate it, or to demonstrate various fonts of a typeface without meaningful text \
+        </p>
+    </div>
+    <input type="text">
+    <input type="password" id="special">
+    <input type="text">
+    <button>Click</button>
+    <script>
+        let div = document.querySelector("div");
+        console.log("innerHTML ", div.innerHTML);
+        console.log("textContent ", div.textContent);
+        console.log("innerText ", div.innerText);
+
+        // const type = document.querySelector("input[type=text]");
+        // console.log(type);
+        
+        const specialType = document.getElementById("special");
+        const type = specialType.getAttribute("type");
+        console.log(type);
+
+        div.style.backgroundColor = "lightyellow";
+        div.style.color = "red";
+
+        div.setAttribute("class", "randomClass")
+        // // const test = document.querySelector("h1");
+        // const test = document.querySelectorAll("h1");
+        // // const random = document.querySelector("#random");  
+        // const random = document.getElementById("random")
+        // const randomClass = document.getElementsByClassName("randomClassName");
+        // console.log("H1", test);
+        // console.log(random, randomClass);
+
+    </script>   
+</body>
+</html>

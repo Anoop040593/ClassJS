@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>I am list</h1>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <!-- <li>4</li> -->
+      <li>5</li>
+    </ul>
+    <script>
+      // let liElement = document.createElement("li");
+      // console.log(liElement);
+      // liElement.textContent = "Make Coffee";
+      // let ul = document.querySelector("ul");
+      // ul.appendChild(liElement)
+
+      let liElement = document.createElement("li");
+      liElement.textContent = "4";
+
+      let allList = document.querySelectorAll("li");
+      let ul = document.querySelector("ul");
+      ul.insertBefore(liElement, allList[3]); //inserts before the index 3s li element.
+    </script>
+  </body>
+</html>
