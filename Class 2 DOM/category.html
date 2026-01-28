@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--html too big-->
+    <script>
+      const selectElem = document.querySelector("select");
+      selectElem.addEventListener("change", function () {
+        const filterValue = selectElem.value;
+        const allTickets = document.querySelectorAll(".price");
+        if (filterValue === "none") {
+          for (let i = 0; i < allTickets.length; i++) {
+            allTickets[i].parentElement.style.display = "block";
+          }
+        } else {
+          for (let i = 0; i < allTickets.length; i++) {
+            if (allTickets[i].getAttribute("data-category") === filterValue) {
+              allTickets[i].parentElement.style.display = "block";
+            } else {
+              allTickets[i].parentElement.style.display = "none";
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
