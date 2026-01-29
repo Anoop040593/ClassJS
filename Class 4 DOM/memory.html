@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   // "use strict"; //using this will make sure b is not declared with var, let or const.
+      //   b = 15; //not using let so attaches to window object, this leads to memory leakage,
+      //   //  bcoz b is not collected by garbage collector at the end of the script
+      //   function abc() {
+      //     console.log(b);
+      //     c = "Hi People";
+      //     b++;
+      //   }
+
+      //   abc();
+      //   console.log(c);
+      //   console.log(b);
+
+      let a = document.querySelector("h1");
+      let p = document.querySelector("p");
+      console.log(a);
+      a.remove(); //just removes from the DOM but not its reference.
+      a = null; //this is for garbage collection. makes it easy to remove.
+      console.log(a); //throws an error
+    </script>
+  </body>
+</html>
